@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Digite seu salário (R$)" />
+
+	<EditText android:layout_width="match_parent" android:id="@+id/edsalario"
+		android:layout_height="wrap_content" android:inputType="number">
+		<requestFocus></requestFocus>
+	</EditText>
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Qual é o seu percentual?" />
+
+	<RadioGroup android:orientation="vertical"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:id="@+id/rgopcoes">
+
+		<RadioButton android:id="@+id/rb40" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="40%"
+			android:checked="true"></RadioButton>
+
+		<RadioButton android:id="@+id/rb45" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="45%"></RadioButton>
+
+		<RadioButton android:id="@+id/rb50" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="50%"></RadioButton>
+
+	</RadioGroup>
+	<Button android:layout_width="fill_parent" android:id="@+id/btcalcular"
+		android:text="Calcular novo salário" android:layout_height="wrap_content" android:gravity="clip_horizontal"></Button>
+</LinearLayout>
